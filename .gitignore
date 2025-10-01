@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+
+# Xcode user data
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
+xcuserdata/
+
+# Build products
+build/
+DerivedData/
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# Swift Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# CocoaPods (if used)
+Pods/
+
+# Carthage (if used)
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# IDE settings
+.idea/
+.vscode/
+
+# Archives and symbols
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Misc
+*.moved-aside
