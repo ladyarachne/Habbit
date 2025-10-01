@@ -38,4 +38,36 @@ final class HabbitUITests: XCTestCase {
             XCUIApplication().launch()
         }
     }
+
+    @MainActor
+    func testAddHabitAndMarkDone() throws {
+        let app = XCUIApplication()
+        app.launch()
+
+        // Add a habit
+        let addButton = app.buttons["ContentView.AddHabitButton"]
+        XCTAssertTrue(addButton.waitForExistence(timeout: 3))
+        addButton.tap()
+
+        let nameField = app.textFields.firstMatch
+        XCTAssertTrue(nameField.waitForExistence(timeout: 3))
+        nameField.tap()
+        nameField.typeText("Water 🌱")
+
+        let saveButton = app.buttons["AddHabitView.SaveButton"]
+        XCTAssertTrue(saveButton.waitForExistence(timeout: 3))
+        saveButton.tap()
+
+        // Verify the habit appears in the list
+        let cell = app.cells.containing(.staticText, identifier: "Water 🌱").element
+        XCTAssertTrue(cell.waitForExistence(timeout: 3))
+
+        // Mark as done
+        let doneButton = cell.buttons["HabitRowView.DoneButton"]
+        XCTAssertTrue(doneButton.waitForExistence(timeout: 3))
+        doneButton.tap()
+
+        // Button should become disabled after marking done today
+        XCTAssertFalse(doneButton.isEnabled)
+    }
 }

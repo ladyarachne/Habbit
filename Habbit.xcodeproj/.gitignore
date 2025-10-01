@@ -1,0 +1,42 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+
+# SwiftPM
+.swiftpm/
+.build/
+Package.pins
+Package.resolved
+
+# Cocoapods (not used here, but safe to include)
+Pods/
+*.xcworkspace
+
+# Carthage (if ever used)
+Carthage/Build/
+
+# Fastlane (if used)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Secrets/certs
+*.p12
+*.mobileprovision
+*.cer
+.env
+
+# User-specific settings
+*.orig
+*.rej
+*.swp
+*.swo
