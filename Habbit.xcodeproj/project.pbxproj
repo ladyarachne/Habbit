@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5F7300042E8CC022006C343E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5F7300032E8CC022006C343E /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5F1A738D2E88428F003D3580 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		5F1A737D2E88428E003D3580 /* Habbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F1A738C2E88428F003D3580 /* HabbitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabbitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F1A73962E88428F003D3580 /* HabbitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabbitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7300032E8CC022006C343E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5F73FFCA2E8B42CE006C343E /* Habbit.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Habbit.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +86,7 @@
 				5F1A738F2E88428F003D3580 /* HabbitTests */,
 				5F1A73992E88428F003D3580 /* HabbitUITests */,
 				5F1A737E2E88428E003D3580 /* Products */,
+				5F7300032E8CC022006C343E /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7300042E8CC022006C343E /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
